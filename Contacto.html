@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.COM</title>
+    <!-- google fontes & fontawesome -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/093473ac19.js" crossorigin="anonymous"></script>
+    <!--Github-->
+    git remote add origin https://github.com/MeneghiniOrnella/TP0---.CommerceOrnellaMeneghini.git
+    git branch -M main
+    git push -u origin main
+    <!-- interno -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">Inicio</a>
+        <a href="INCOTERMS.html">INCOTERMS</a>
+        <a href="Transporte.html">Transporte</a>
+        <a href="Sobre_Nosotros.html">Nosotros</a>
+        <a href="Contacto.html" class="nav_selected">Contactanos</a>
+    </header>
+    <div class="contacto">
+        <aside>
+            <p>#opentowork</p>
+            <p><b>C. Ornella Meneghini</b></p>
+        </aside>
+        <section class="form">
+            <h2 class="h2_Contact">Pedir cotización</h2>
+            <form action="">
+                <div class="empresa">
+                    <label for="company">Empresa  </label><input type="text" placeholder="Agricultivos S.A. (obligatorio)" required><br>
+                </div>
+                <div class="nombre">
+                    <label for="name">Nombre  </label><input type="text" placeholder="Adam"><br>
+                    <label for="lastname" class="nombre2">Apellido  </label><input type="text" placeholder="Smith"><br>
+                </div>
+                <div class="empresa">
+                    <label for="form_mail">Mail  </label><input type="email" name="mailto" id="" required placeholder="adam_smith@mail.com (obligatorio)"><br>
+                    <div class="radio">
+                </div>
+                <div class="nombre">
+                        <p>Elegir</p>
+                        <input type="radio" name="impo/expo" id="Importación"><label for="Importación"> Importación </label>
+                        <input type="radio" name="impo/expo" id="Exportación"><label for="Exportación"> Exportación </label>
+                </div><br>
+                </div>
+                <div class="nombre">
+                    <label for="city1name">Lugar de origen  </label><input type="text" placeholder="Buenos Aires"><br>
+                    <label for="city1date" class="nombre2">Fecha de salida  </label><input type="date" name=""><br>
+                </div>
+                <div class="nombre">
+                    <label for="city2name">Lugar y fecha de destino  </label><input type="text" placeholder="Buenos Aires"><br>
+                    <label for="city2date" class="nombre2">Fecha de llegada  </label><input type="date" name=""><br>
+                </div>
+                <div class="empresa">
+                    <label for="INCOTERMS">INCOTERMS  </label>
+                        <select name="INCOTERMS">
+                            <option value="EXW 2020">EXW 2020</option>
+                            <option value="FCA 2020">FCA 2020</option>
+                            <option value="CPT 2020">CPT 2020</option>
+                            <option value="CIP 2020">CIP 2020</option>
+                            <option value="DAP 2020">DAP 2020</option>
+                            <option value="DPU 2020">DPU 2020</option>
+                            <option value="DDP 2020">DDP 2020</option>
+                            <option value="CFR 2020">CFR 2020</option>
+                            <option value="FOB 2020">FOB 2020</option>
+                            <option value="FAS 2020">FAS 2020</option>
+                            <option value="CIF 2020">CIF 2020</option>
+                            <option value="EXW 2010">EXW 2010</option>
+                            <option value="FCA 2010">FCA 2010</option>
+                            <option value="CPT 2010">CPT 2010</option>
+                            <option value="CIP 2010">CIP 2010</option>
+                            <option value="DAP 2010">DAP 2010</option>
+                            <option value="DAT 2010">DAT 2010</option>
+                            <option value="DDP 2010">DDP 2010</option>
+                            <option value="CFR 2010">CFR 2010</option>
+                            <option value="FOB 2010">FOB 2010</option>
+                            <option value="FAS 2010">FAS 2010</option>
+                            <option value="CIF 2010">CIF 2010</option>
+                            <option value="other">otro</option>
+                        </select><br>
+                    <label for="aditional">Información Adicional  </label><br>
+                    <textarea name="textarea" id="" cols="30" rows="10" placeholder="Nombre del producto, cantidad, y otros datos relevantes."></textarea>
+                    <div class="checkbox">
+                    <input type="checkbox" name="ok" id="ok"><label for="ok"><i class="fas fa-robot" required></i>No soy un robot</label>
+                    </div>
+                    <input type="submit" value="Enviar" class="Consultar">
+                </div>
+            </form>
+        </section>
+        <aside>
+            <p>#opentowork</p>
+            <p><b>C. Ornella Meneghini</b></p>
+        </aside>
+    </div>
+    <footer>
+        <a href="mailto:meneghini.ornella@gmail.com"><i class="fas fa-at"></i></a>
+        <a href="https://www.linkedin.com/in/ornella-meneghini/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+        <p>Página realizada por <a href="https://www.linkedin.com/in/ornella-meneghini/">C. Ornella Meneghini</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,424 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+body{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(248, 248, 248);
+    flex-wrap: wrap;
+}
+h1, h2, h3{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-decoration: solid;
+    text-align: center;
+    color:rgb(52,36,78);
+    color: linear-gradient(0deg, rgba(52,36,78,1) 0%, rgba(157,97,247,1) 100%);
+}
+p{
+    text-align: justify;
+    margin: 2rem;
+}
+.grid{
+    grid: 100%;
+    margin: 2px;
+}
+.index-flex{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    -ms-flex-align: center;
+    flex-direction: row;
+}
+a:link, a:visited, a:active, a:hover {
+    text-decoration:none;
+}
+
+/* header & footer */
+header, footer, header a, footer a{
+    display: flex;
+    text-decoration: none;
+    overflow: hidden;
+    background-color: rgb(236, 236, 236);
+    color: black;
+    margin:0;
+    padding: 0;
+}
+header a{
+    padding: 10px 14px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10%;
+}
+header a:hover, footer a:hover{
+    text-decoration: none;
+    overflow: hidden;
+    background:rgb(66, 31, 117);
+    background: linear-gradient(0deg, rgb(66, 31, 117) 0%, rgba(121,82,179,1) 100%);
+    color: rgb(255, 255, 255);
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:first baseline;
+}
+footer a{
+    padding: 0.2rem;
+    border-radius: 8%;
+}
+footer > a{
+    padding: 0.6rem;
+    border-radius:100%;
+}
+
+/* index */
+.index-flex{
+    display: flex;
+    flex-direction: column;
+}
+.boxSecciones{
+    text-decoration: none;
+    text-emphasis: none;
+    text-align: center;
+    color: rgb(90,51,150);
+    color: linear-gradient(0deg, rgba(90,51,150,1) 0%, rgba(155,101,235,1) 100%);
+}
+.boxSecciones:hover{
+    background-color: rgb(126, 126, 126);
+}
+.section a{
+    color:rgb(61, 44, 175);
+}
+.section a:hover{
+    color: rgb(251, 255, 0);
+}
+
+/* INCOTERMS */
+table{
+    display: grid;
+    text-align: center;
+    align-content: center;
+    grid-template-columns: auto;   
+}
+tr:nth-child(odd){
+    background: #d3d3d3;
+}
+
+/* transporte */
+.listTransport{
+    background: rgb(199,180,255);
+    background: linear-gradient(90deg, rgba(199,180,255,1) 0%, rgba(115,56,209,1) 60%, rgba(150,11,218,1) 100%);
+    text-align: center;
+    flex: auto;
+}
+.listTransport a{
+    color:rgb(255, 255, 255);
+}
+.listTransport a:hover{
+    color:rgb(255, 238, 0);
+}
+ul{
+    list-style-type: none;
+}
+ol{
+    flex: none;
+    align-items: center;
+    justify-content: left;
+    margin: 0%;
+}
+
+/* Nosotros */
+.gridNosotros{
+    display: grid;
+    grid-template-columns: 70%  30%;
+    grid-template-rows: 1fr;
+}
+
+
+/* Contacto */
+.contacto{
+    display: grid;
+    grid-template-columns: 0.3fr 2fr 0.3fr;
+    grid-auto-columns: auto;
+}
+.form{
+    margin: 0 15px 0 15px;
+    align-items: flex-start;
+}
+.empresa{
+    width: 100%;
+}
+.nombre{
+    display:flex;
+    flex-wrap: wrap;
+}
+.nombre2{
+    margin-left: 10%;
+}
+input{
+    margin-left: 1%;
+}
+label, input{
+    text-align: justify;
+}
+
+input, textarea{
+    color:rgb(0, 0, 0);
+    text-align: center;
+    justify-content: stretch;
+    border-radius: 0px;
+    border-radius: 8%;
+    font-family: 'Lora', serif;
+    outline: none;
+    border: 0;
+    background-color: rgb(231, 206, 255);
+}
+input:focus, .form .radio label:hover, .form .checkbox label:hover, textarea:focus{
+    border-top: 4px solid rgb(82, 54, 167);
+    border-left: 4px solid rgb(82, 54, 167);
+    border-right: 4px solid rgb(76, 0, 255);
+    border-bottom: 4px solid rgb(76, 0, 255);
+    background-color: white;
+    text-align: start;
+}
+input:invalid, input:required::placeholder{
+    color: rgb(167, 0, 0);
+}
+.form input[type="radio"], .form input[type="checkbox"]{
+    display: none;
+}
+.form .radio label, .form .checkbox label{
+    color:rgb(0, 0, 0);
+    padding: 5px 15px 5px 51px;
+    margin-left: 3%;
+    margin-right: 3%;
+    display: inline-block;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    background-color: rgb(231, 206, 255);
+    padding: 3px;
+    width: auto;
+    height: 0.2rem;
+}
+.form input[type="radio"]:hover + label, .form input[type="radio"]:hover + label{
+    background: rgba(149, 11, 218, 0.37);
+    color:rgb(255, 255, 255);
+}
+.Consultar{
+    background: rgb(82, 54, 167);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1.3% 2% 1.3% 2%;
+}
+.form input[type="radio"]:checked + label, .form input[type="checkbox"]:checked + label, .Consultar:hover{
+    background: rgb(82, 54, 167);
+    background: linear-gradient(90deg, rgba(82, 54, 167) 10%, rgba(115,56,209,1) 50%, rgba(150,11,218,1) 100%);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1.3% 2% 1.3% 2%;
+    transform: scale(1.1);
+}
+input, textarea {
+    box-shadow: none;
+    border-radius: 2%;
+}
+aside{
+    background-color: rgb(33, 48, 129);
+    color: white;
+    contain: strict;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    animation-duration: 10s;
+    animation-name: ad;
+    animation-iteration-count: infinite;
+}
+@keyframes ad {
+    from{
+        background-color: rgb(7, 105, 252);
+    }
+    35%{
+        background-color: rgb(67, 0, 224);
+    }
+    50%{
+        background-color: rgb(30, 30, 185);
+    }
+    75%{
+        background-color: rgb(43, 43, 235);
+    }
+    to{
+        background-color: rgb(7, 105, 252);
+    }
+}
+aside p{
+    text-align: center;
+    animation-duration: 10s;
+    animation-name: ad_text;
+    animation-iteration-count: infinite;
+}
+@keyframes ad_text {
+    from{
+        margin-top: 100%;
+        font-size: 100%;
+    }
+    to{
+        margin-bottom: 10%;
+        font-size: 130%;
+    }
+}
+
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    header, .listTransport{
+        flex-direction: column;
+    }
+    header a{
+        text-align: center;
+        float: none;
+        width: 100%;
+    }
+    /* index */
+    section{
+        width: 100%;
+    }
+    .imgIndex, .imgTransport{
+        justify-content: center;
+        width:100%;
+        border-radius: 4%;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
+    /* INCOTERMS */
+    .grupoIncoterms{
+        display: none;
+    }
+    .aspectos-que-regulan{
+        text-align: center;
+        justify-content: center;
+    }
+    /* Contacto */
+    input, textarea, button {
+    width: 100%;
+    }
+    textarea{
+        height: 5rem;
+    }
+    aside{
+        display: none;
+    }
+  }
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+    body{
+        text-align: center;
+        align-content: center;
+    }
+    selection{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        width: 80%;
+        float: center;
+    }
+    table{
+        width: 100%;
+        justify-items: center;
+    }
+    /* index */
+    .imgIndex, .imgTransport{
+        justify-content: center;
+        width:80%;
+        border-radius: 4%;
+    }
+    .section{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0.01%;
+    }
+    /* transporte */
+    .grid h2, .grid h3{
+        text-align: center;
+        text-justify: auto;
+    }
+    .listTransport{
+        column-count: 5;
+        font-size: 1rem;
+    }
+    .transporteBox{
+        column-count: 2;
+    }
+    /* Contacto */
+    textarea{
+        width: 100%;
+        height: 10rem;
+    }
+    
+  }
+
+  @media only screen and (min-width: 801px) {
+    header{
+        text-align: right;
+        justify-content: right;
+    }
+    h1, h2, h3{
+        text-align: left;
+    }
+    /* index */
+    .imgIndex{
+        width: 300px;
+        height: 200px;
+    }
+    /* INCOTERMS */
+    .incotermsGrid{
+        display: grid;
+        grid-template-columns: 80% 20%;
+    }
+    .aspectos-que-regulan{
+        background-color: rgb(236, 236, 236);
+        border-radius: 10% 0% 0% 10%;
+        justify-content: center;
+        text-align: center;
+        list-style:symbols(→);
+        lighting-color: blueviolet;
+    }
+    /* transporte */
+    .listTransport{
+        column-count: 5;
+        font-size: 2rem;
+    }
+    .imgTransport{
+        justify-content: center;
+        width: 40rem;
+        height: 25rem;
+        border-radius: 8%;
+        flex-direction: row;
+    }
+    .section{
+        display: flex;
+        flex-direction: row;
+    }
+    .MetodosdeTransportedeCarga{
+        display: grid;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .transporteBox{
+        column-count: 2;
+    }
+  }
