@@ -45,8 +45,8 @@ header, footer, header a, footer a{
     display: flex;
     text-decoration: none;
     overflow: hidden;
-    background-color: rgb(236, 236, 236);
-    color: black;
+    background-color: #ececec;
+    color: #000;
     margin:0;
     padding: 0;
 }
@@ -59,9 +59,9 @@ header a{
 header a:hover, footer a:hover{
     text-decoration: none;
     overflow: hidden;
-    background:rgb(66, 31, 117);
+    background:#421f75;
     background: linear-gradient(0deg, rgb(66, 31, 117) 0%, rgba(121,82,179,1) 100%);
-    color: rgb(255, 255, 255);
+    color: #fff;
 }
 footer{
     display: flex;
@@ -87,17 +87,23 @@ footer > a{
     text-decoration: none;
     text-emphasis: none;
     text-align: center;
-    color: rgb(90,51,150);
+    color: #5a3396;
     color: linear-gradient(0deg, rgba(90,51,150,1) 0%, rgba(155,101,235,1) 100%);
 }
-.boxSecciones:hover{
-    background-color: rgb(126, 126, 126);
+.boxSecciones p{
+    color: #3d2caf;
+    text-align: center;
+    margin: 0;
+}
+.boxSecciones p:hover{
+    color: #fbff00;
+    background-color: #7e7e7e;
 }
 .section a{
-    color:rgb(61, 44, 175);
+    color:#3d2caf;
 }
 .section a:hover{
-    color: rgb(251, 255, 0);
+    color: #fbff00;
 }
 
 /* INCOTERMS */
@@ -140,7 +146,6 @@ ol{
     grid-template-columns: 70%  30%;
     grid-template-rows: 1fr;
 }
-
 
 /* Contacto */
 .contacto{
