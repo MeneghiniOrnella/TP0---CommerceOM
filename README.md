@@ -1,4 +1,4 @@
-# TP0---.CommerceOM
+# TP0---CommerceOM
 Proyecto Front End de Codo a Codo Python 2021
 
 ## Technologies used
